@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Branch Music</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body class="bg-white">
+    <a id="back-to-top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+    <header class="bg-white shadow-sm">
+        <div class="container-fluid py-0 px-lg-5 px-md-3 px-2">
+            <div class="d-flex align-items-center justify-content-between p-0">
+                <div class="nav-left d-flex align-items-center ps-lg-5 ps-md-4">
+                    <a class="mobile-hamburger-icon d-block d-lg-none d-xl-none d-xxl-none me-1 me-md-3" data-bs-toggle="offcanvas" href="#side-nav" role="button" aria-controls="side-nav">
+                        <img src="img/Vectormenu.png" alt=""> 
+                    </a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="side-nav" aria-labelledby="side-nav-label">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="side-nav-label"></h5>
+                            <a href="index.html" class="sidenav-brand">
+                                <div class="sidenav-logo">
+                                    <img src="img/logo 1nav.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body w-100">
+                            <ul class="w-100 list-unstyled">
+                                <li class="d-flex">
+                                    <a href="index.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="eva:home-fill" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Home</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="instrumentalist.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="icon-park-solid:music" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Instrumentalist</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="user/messages.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="ic:round-mail" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Messages</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="explore.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="majesticons:compass-2" data-rotate="270deg" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Explore</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="about/overview.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="ant-design:question-circle-filled" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">About Us</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="contact.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="teenyicons:user-square-solid" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Contact Us</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="settings.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                    <span class="iconify sidenav-icons" data-icon="bi:gear-fill" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Settings</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="index.html" class="navbar-brand">
+                        <div class="nav-logo">
+                            <img src="img/logo 1nav.png" alt="" class="img-fluid">
+                        </div>
+                    </a>
+                    <form class="d-flex position-relative ms-lg-4 ms-0">
+                        <input class="form-control me-2 border-dark" type="search" placeholder="Search" aria-label="Search">
+                        <button class="position-absolute px-2 bg-white rounded" type="submit">
+                            <img src="img/Search.png" alt="" class="">
+                        </button>
+                    </form>
+                </div>
+                <div class="nav-right align-items-center d-flex pe-lg-5 pe-md-4">
+                    <a href="#" class="text-decoration-none">
+                        <div class="nav-notifications d-flex align-items-center pe-lg-4 pe-md-2 pe-1 border-end border-dark">
+                            <p class="text-dark fw-bold m-0">Notifications</p>
+                            <div class="bell-img d-flex align-items-center">
+                                <img src="img/Bell_pin_fillbell.png" alt="" class="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="user/profile.html" class="text-decoration-none">
+                        <div class="nav-user d-flex justify-content-center align-items-center ps-lg-4 ps-md-2 ps-1">
+                            <div class="user-img d-flex align-items-center justify-content-center rounded-circle p-0">
+                                <img src="img/User_filluser.png" alt="" class="m-0">
+                            </div>
+                            <p class="text-dark fw-bold m-0 ms-1">John Doe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="side-navigation col-lg-3 d-lg-block d-none pe-xl-5 pe-0">
+                <div class="side-navigation-wrap py-5">
+                    <ul class="w-100 list-unstyled mb-5">
+                        <li class="d-flex">
+                            <a href="index.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="eva:home-fill" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Home</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="instrumentalist.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="icon-park-solid:music" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Instrumentalist</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="user/messages.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="ic:round-mail" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Messages</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-flex active">
+                            <a href="explore.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="majesticons:compass-2" data-rotate="270deg" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Explore</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="about/overview.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="ant-design:question-circle-filled" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">About Us</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="contact.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="teenyicons:user-square-solid" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Contact Us</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="settings.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="bi:gear-fill" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Settings</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-content col-lg-9 col-12 px-4 py-4">
+                <a id="back-to-top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+                <section id="explore" class="pb-5">
+        <div class="container">
+            <div class="explore-header-text">
+                <h3 class="text-primary">Drummers</h3>
+                <h5 class="text-dark">Live drum tracks and custom loops</h5>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="position-relative mb-3">
+                        <label for="exampleFormControlInput1" class="form-label fs-6">Category:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="drums">
+                        <div class="position-absolute bottom-0 end-0 pe-2 pb-lg-1 pb-sm-1">
+                            <img src="/img/down arrow.png" alt="">
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="position-relative mb-3">
+                        <label for="exampleFormControlInput1" class="form-label fs-6">Search:</label>
+                        <input type="email" class="form-control two" id="exampleFormControlInput1" placeholder="Name of drummer/team">
+                        <div class="position-absolute bottom-0 end-0 ps-1 pb-2 icon-sm">
+                            <img src="/img/Search.png" alt="">
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="position-relative mb-3">
+                        <label for="exampleFormControlInput1" class="form-label fs-6">Sort by:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Popularity">
+                        <div class="position-absolute bottom-0 end-0 pe-2 pb-lg-1 pb-sm-1">
+                            <img src="/img/down arrow.png" alt="">
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/IMG_20220603_214029.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#18,000</p>
+                                    </div>
+                            </div>
+                            <h6>Rockstar Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span class="pause"><img src="/img/pause.png" alt=""></span>
+                                <span class="music lines"><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 2.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#18,000</p>
+                                    </div>
+                            </div>
+                            <h6>Rockstar Drummer</h6>
+                            <p>Jeremiah Hale</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center mb-2">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 3.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#18,000</p>
+                                    </div>
+                            </div>
+                            <h6>Rockstar Drummer</h6>
+                            <p>Kindred Yul</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center mb-2">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 4.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#15,000</p>
+                                    </div>
+                            </div>
+                            <h6>Jazz Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 5.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#15,000</p>
+                                    </div>
+                            </div>
+                            <h6>Jazz Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 6.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#15,000</p>
+                                    </div>
+                            </div>
+                            <h6>Jazz Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-2">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 11.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#11,000</p>
+                                    </div>
+                            </div>
+                            <h6>Rockstar Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 9.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#11,000</p>
+                                    </div>
+                            </div>
+                            <h6>Rockstar Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 8.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#11,000</p>
+                                    </div>
+                            </div>
+                            <h6>Rockstar Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 10.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#10,000</p>
+                                    </div>
+                            </div>
+                            <h6>Highlife Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p-1 mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rocstar drummer 7.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#10,000</p>
+                                    </div>
+                            </div>
+                            <h6>Highlife Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 p-lg-3 p- mb-3">
+                    <div class="card bg-music">
+                        <div class="card-body">
+                            <div class="img-music position-relative">
+                                    <img src="/img/rockstar drummer 12.jpg" class="img-fluid mb-3" alt="">
+                                    <div class="position-absolute money">
+                                        <p class="pt-2">#10,000</p>
+                                    </div>
+                            </div>
+                            <h6>Highlife Drummer</h6>
+                            <p>Danny Roland</p>
+                            <div class="d-flex mb-2">
+                                <p><img src="/img/location.png" alt=""></p>
+                                <p class="text-primary">Osapa London, Lekki.</p>
+                            </div>
+                            <div class="d-flex">
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p><i class='bx bxs-star text-warning'></i></p>
+                                <p class="text-secondary ps-2">243 reviews</p>
+                            </div>
+                            <p class="text-secondary">Performed or recorded with Philip Bailey Jr. (Earth Wind & Fire), Nils Lofgren (E Street Band), Chris Caffrey (Tr...</p>
+                            <p>Uploads</p>
+                            <div class="d-flex music-lines justify-content-center mb-3">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex music-lines justify-content-center">
+                                <span><img src="/img/pause.png" alt=""></span>
+                                <span><img src="/img/music lines.png" alt=""></span>
+                            </div>
+                            <div class="d-flex text-primary align-items-center justify-content-end icon-sm">
+                                <span><p class="mt-3">View Service</p></span>
+                                <span><i class='bx bx-chevrons-right mt-2 ps-2'></i></span>
+                                <span><i class='bx bx-chevrons-right mt-2 pe-2'></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid py-5">
+        <div class="container py-5 mt-lg-5">
+            <div class="row text-white mt-lg-5 pt-lg-5">
+                <div class="col-lg-4 mt-lg-5 col-12 d-flex flex-lg-row flex-column justify-content-between">
+                    <div class="footer-branch-music d-flex flex-column mb-lg-0 mb-5">
+                        <h6 class="footer-header mb-3">Branch Music</h6>
+                        <a href="index.html" class="footer-text my-2 py-1 text-decoration-none text-white">Home</a>
+                        <a href="instrumentalist.html" class="footer-text my-2 py-1 text-decoration-none text-white">Instrumentalist</a>
+                        <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Our Service</a>
+                        <a href="explore.html" class="footer-text my-2 py-1 text-decoration-none text-white">Explore</a>
+                    </div>
+                    <div class="footer-about d-flex flex-column pe-4 mb-lg-0 mb-5">
+                        <h6 class="footer-header mb-3">About</h6>
+                        <a href="about/overview.html" class="footer-text my-2 py-1 text-decoration-none text-white">Overview</a>
+                        <a href="about/how_it_works.html" class="footer-text my-2 py-1 text-decoration-none text-white">How It Works</a>
+                        <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Analytics</a>
+                        <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Sponsors</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12 mt-lg-5 d-flex flex-column mb-lg-0 mb-5">
+                    <h6 class="footer-header mb-3">Terms</h6>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Privacy Policy</a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Terms of Service</a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Copyright Policy</a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Fee and Charges</a>
+                </div>
+                <div class="col-lg-2 col-12 mt-lg-5 d-flex flex-column mb-lg-0 mb-5">
+                    <h6 class="footer-header mb-3">Contact Us</h6>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="img/VectorFB.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">Facebook</p>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="img/VectorTW.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">Twitter</p>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="img/VectorIG.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">Instagram</p>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="img/VectorYT.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">YouTube</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-12 d-flex mt-lg-5 flex-column pe-lg-0 pe-5">
+                    <h6 class="footer-header mb-4">Honestly, we think you'll love our newsletter</h6>
+                    <p class="footer-text mb-4">Subscribe to receive latest updates about Branch music, instrumentalists</p>
+                    <form action="" method="post">
+                        <div class="footer-form-wrap d-flex">
+                            <input type="email" name="email" id="" class="py-2 ps-4 pe-3" placeholder="Email address" aria-required="true" required>
+                            <button type="submit" class="pt-1"><i class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="js/header_footer.js"></script>
+</body>
+</html>

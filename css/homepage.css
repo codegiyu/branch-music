@@ -1,0 +1,606 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+body{
+    background-color: #fff;
+}
+a:hover, a{
+    text-decoration: none;
+    color: #111111;
+}
+.side-navigation-wrap{
+    box-shadow: 0 10px 20px rgba(36, 0, 70, 0.05);
+    width: 15rem;
+}
+
+.side-navigation-wrap > ul > li > a {
+    width: 100%;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: #240046;
+}
+
+.side-navigation-wrap ul li.active, .side-navigation-wrap ul li:hover {
+    background: #240046;
+    
+}
+.side-navigation-wrap ul li.d-flex{
+    margin: 1rem!important;
+}
+
+.side-navigation-wrap ul li.active p, .side-navigation-wrap ul li:hover p {
+    color: white;
+}
+
+.side-navigation-wrap ul li.active a .side-navigation-menu-icon, 
+.side-navigation-wrap ul li:hover a .side-navigation-menu-icon {
+    background: white;
+}
+
+.side-navigation-wrap > ul > li.active > a > .side-navigation-list-wrap > .side-navigation-menu-icon > .side-navigation-icons,
+.side-navigation-wrap > ul > li:hover > a > .side-navigation-list-wrap > .side-navigation-menu-icon > .side-navigation-icons {
+    color: #240046;
+}
+
+.side-navigation-menu-icon {
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(#240046, #cfb2eb);
+}
+
+.side-navigation-wrap > ul > li > a > .side-navigation-list-wrap > .side-navigation-menu-icon > .side-navigation-icons {
+    width: 1.5rem;
+    color: #ffffff;
+}
+.filter{
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+.filter > .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popularity{
+    margin-left: 5.5rem;
+}
+.container > select{
+    border: 0.06rem solid #111111;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0 0.5rem 0rem;
+}
+.showcase{
+    display: flex;
+    flex-direction: column;
+}
+.pictures-container{
+    display: flex;
+    width: 88%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+    margin: 1rem auto 1rem 14rem;
+}
+.picture-container img{
+    width: 29rem;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 1.13rem;
+    background: #FFFFFF;
+    box-shadow: 0px 7px 15px rgba(36, 0, 70, 0.1);
+    border-radius: 15px;
+}
+.firstimg{
+    margin-top: 1rem;
+}
+.fa-screencast{
+    font-size: 1.3rem;
+    background: #111111;
+}
+.bi-download{
+    margin-left: 3rem;
+}
+.thumbs-up{
+    width: 7.5%!important;
+    padding:0!important;
+    margin-left: 3rem;
+}
+.thumbs-down{
+    width: 7.5%!important;
+    padding:0!important;
+    margin-left: 3rem;
+    margin-bottom: -0.3rem;;
+    transform:  rotateX(180deg);
+}
+.caption{
+    max-width: 31rem;
+    font-size: 2rem;
+}
+.review,.text{
+    margin-top: 0.5rem ;
+}
+.bi-star{
+    color: #FF9E00;
+}
+.button{
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem 0rem 4rem 19rem;
+}
+.btn-1{
+    background: #240046;
+    color: #fff;
+    border-radius: 0.3rem;
+    padding: 1rem 1.9rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+.btn-2{
+    background: #FF9E00;;
+    color: #111111;
+    border-radius: 0.3rem;
+    padding: 1rem 1.9rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+/*Client message*/
+.messages-section{
+    margin-top: -37rem;
+    z-index: 1;
+    margin-left: 14rem;
+    padding: 3rem;
+    padding-bottom: 20rem;
+}
+#messages-section{
+     background: #fff;
+}
+.function{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.whatsapp{
+    padding:1rem 2rem 0 0;
+    margin: 0.5rem
+}
+.whatsapp img{
+    width: 35rem;
+}       
+.purple-header{
+    background: #240046; 
+    width: 59rem;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.02em;
+    margin-top: -89rem;
+    margin-right: 1.5rem;
+ }
+.aside{
+    display: grid;
+    justify-content: end;
+    justify-items: center;
+}
+.msg{
+    width: 94.8rem;
+    height: 90px;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.msg::placeholder{
+    color: #240046;
+}
+.srch{
+    border-radius: 20px;
+    width: 35rem;
+    height: 61px;
+    border: 1px solid rgba(17, 17, 17, 0.5);
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    margin-top: 0.6rem;
+}
+.clt{
+    background: #fff;
+    margin-top: 1rem;
+    padding-top: 3rem;
+}
+.clt > .menu > ul{
+    width: 200px;
+    height: 1190px;
+}
+.function  > .bi-search{
+    font-size: 2rem;
+    color: #111111;
+    margin-bottom: -3.3rem;
+    margin-left: 1rem;
+    z-index: 1
+}
+.chat{
+    background: rgba(36, 0, 70, 0.3);
+    border-radius: 20px;
+    width: 396.3px;
+    height: 106px;
+    margin: 6.8rem 0 6.8rem 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 9px 19px;
+}
+.chat-box{
+    padding: 2rem;
+    margin-top: -90rem;
+}
+.second{
+    margin: 2rem 0 0 0rem;
+    padding: 71px 19px 64px 19px;
+    border: 1px solid black;
+    background: #fff;
+}
+.third{
+    padding-left: 81px;
+    height: 136px;
+}
+.fourth{
+    margin: 2rem 0 0 0rem;
+    padding: 29px 19px 9px 34px;
+    border: 1px solid black;
+    background: #fff;
+    width: 247.3px;
+    height: 100px;
+}
+.phone-message{
+    display: none;
+}
+/*Media Queries*/
+@media screen and (max-width: 321px) {
+    .picture-container{
+        width: 6ch;
+    }
+    .picture-container img{
+        width: 6.5rem;
+    }
+    .button{
+        margin: 1rem 0 2rem 2rem;
+    }
+    .msg{
+        width: 20rem!important;
+    }
+    .srch, .whatsapp img{
+        width: 19rem!important;;
+    }
+    .second, .fourth{
+        margin-left: 28rem!important;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 376px) { 
+    .msg{
+        width: 24rem!important;
+    }
+    .srch, .whatsapp img{
+        width: 22rem!important;;
+    }
+    .second, .fourth{
+        margin-left: 25rem!important;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 426px) {
+    .picture-container{
+        width: 6.5ch;
+    }
+    .picture-container img{
+        width: 6.5rem;
+    }
+    .pictures-container{
+        max-width: 21rem;
+    }
+    .caption{
+        font-size: 2rem;
+    }
+    .button{
+        margin: 1rem 0 2rem 4rem;
+    }
+}
+@media screen and (max-width: 426px) {
+    .messages-section,.aside,.purple-header,.chat-box{
+        margin: 0.5rem auto!important;
+        padding: 0;
+    }
+    .msg{
+        width: 26rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: 1px solid #fff;
+        font-weight: 700;
+        padding-left: 16px!important;
+        margin: 0;
+        padding: 0;
+    }
+    .function > .bi-search{
+        margin-top: 1.5rem;
+    }
+    .srch{
+        margin: 0.5rem;
+        padding: 0.5rem 0 1.5rem 3rem;
+        width: 25rem;
+        font-size: 2.5rem;
+    }
+    .purple-header{
+        width: 47rem;
+    }
+    .whatsapp img{
+        width: 25rem;
+    }
+    .purple-header{
+        justify-content: flex-end;
+    }
+    .purple-header > p{
+        margin-right: 2rem;
+    }
+    .chat-box{
+        font-size: 1rem;
+    }
+    .chat{
+        width: 28ch;
+        height: 8rem;
+        padding: 9px 19px;
+        margin-left: 30rem;
+    }
+    .msg-lg{
+        display: none;
+    }
+    .phone-message{
+        display: block;
+    }
+    .second, .fourth{
+        margin-left: 22rem;
+    }
+    .third{
+        margin-left: 31rem;
+    }
+    .clt{
+        display: none;
+    }
+    .container > select{
+        padding-right: 3.5rem!important;
+        font-size: 0.8rem;
+        border-radius: 2.6rem!important;
+    }
+    .filter{
+        margin:1rem auto;
+    }
+    .popularity{
+        margin-left: 1rem;
+    }
+    .fa-chromecast,.bi-download,.thumbs-up,.thumbs-down{
+        margin-left: 0!important;
+    }
+    .caption{
+        font-size: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    .btn-1,.btn-2{
+        padding: 0 0.9rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    .pictures-container{
+        margin:0 auto;
+        padding: 0;
+    }
+    .pictures-container{
+        max-width: 18rem;
+    }
+    .picture-container img{
+        padding: 0.5rem;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 900px) {
+    .filter{
+        margin:1rem auto;
+    }
+    .container >select{
+        font-size: 0.8rem;
+        padding-right: 11.5rem!important;
+        border-radius: 2.6rem!important;
+    }
+    .popularity{
+        margin-left: 1rem;
+    }
+    .bi-download,.thumbs-up,.thumbs-down{
+         margin-left: 1rem!important;
+    }
+    .caption{
+        font-size: 0.85rem;
+    }
+    .button{
+        margin: 1rem 0 2rem 1rem
+    }
+    .btn-1,.btn-2{
+        padding: 0 0.9rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    .pictures-container{
+        margin:1rem auto;
+        padding: 0;
+    }
+    .pictures-container{
+        width: 47rem;
+        max-width: 47rem;
+    }
+    .picture-container img {
+        max-width: 14.3rem;
+    }
+   .picture-container{
+       width: 15rem;
+    }
+   .caption{
+       margin-left: 1rem;
+    }
+   .messages-section,.aside, .purple-header, .chat-box{
+        margin: 0.5rem auto!important;
+        padding: 0;
+    }
+    .msg{
+        width: 48rem;
+    }
+    .srch, .whatsapp img{
+        width: 47rem!important;;
+     }
+    .chat{
+        margin-left: 31rem;
+    }
+    .second, .fourth{
+       margin-left: 12rem;
+    }
+    .third{
+    margin-left: 31rem;
+    }
+}
+   @media screen and (min-width :901px) and (max-width: 991px) {
+    .filter{
+        margin:1rem auto;
+    }
+    .pictures-container{
+        width: 60rem;
+        max-width: 75rem;;
+        margin: 1rem auto;
+    }
+    .container > select{
+        padding-right: 12rem!important;
+    }
+    .picture-container{
+        width: 20.5ch;
+    }
+    .picture-container img{
+        width: 17rem;
+    }
+    .button{
+        margin: 1rem 0 2rem 5rem
+    }
+    .bi-download,.thumbs-up,.thumbs-down{
+        margin-left: 0!important;
+    }
+    .caption{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+}
+   @media screen and (min-width :990px) and (max-width: 1200px) {
+    .button{
+        margin: 1rem 0 2rem 15rem;
+    }
+   .filter{
+        margin-left: 16rem;
+    }
+    .popularity{
+        margin-left: 2rem;
+    }
+   .picture-container{
+       width: 16.5ch;
+    }
+   .picture-container img{
+        width: 14rem;
+    }
+   .pictures-container{
+       width: 49rem;
+       max-width: 75rem;;
+       margin-left: 14rem;
+    }
+    .fa-chromecast,.bi-download,.thumbs-up,.thumbs-down{
+        margin-left: 0!important;
+    }
+    .caption{
+       font-size: 1.5rem;
+       width: 14rem;
+    }
+    .container > select{
+        padding-right: 12rem!important;
+    }
+    .msg{
+        width: 45.5rem;
+    }
+    .srch, .whatsapp img{
+        width: 24rem;
+    }
+    .purple-header, .chat-box{
+        width: 20rem;
+        margin-top: -69rem;
+    }
+    .chat{
+        margin: 5rem auto !important;
+        width: 17rem;
+        height: 9rem;
+        font-size: 1rem;
+    }
+    .second, .fourth{
+        margin-left: -3rem!important;
+    }
+}
+@media screen and (min-width :1100px) and (max-width: 1200px) {
+    .filter{
+        margin-left: 16rem;
+    }
+    .pictures-container{
+        margin-left: 17rem!important;
+    }
+    .container > select{
+        padding-right: 12rem!important;
+    }
+}
+@media screen and (min-width :1201px) and (max-width: 1440px) {
+    .filter{
+        margin-left: 16rem;
+    }
+    .pictures-container{
+        margin-left: 14rem!important;
+        width: 85%;
+    }
+    .container > select{
+        padding-right: 24rem!important;
+    }
+    .picture-container{
+        width: 23rem;
+    }
+    .picture-container img{
+        width: 22rem;
+    }
+    .bi-download,.thumbs-up,.thumbs-down{
+        margin-left: 1rem!important;
+    }
+    .msg{
+        width: 71.5rem;
+    }
+    .srch, .whatsapp img{
+        width: 30rem;
+    }
+    .purple-header, .chat-box{
+        width: 41rem;
+        margin-top: -80rem;
+    }
+    .chat{
+        margin: 5rem auto !important;
+        width: 21rem;
+        height: 9rem;
+        font-size: 1rem;
+        margin-left: 17rem!important;
+    }
+    .second, .fourth{
+        margin-left: 1rem!important;
+    }
+}
+
+   

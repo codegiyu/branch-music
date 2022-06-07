@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+/* MAIN CONTENT STYLING */
+
+.card-header {
+    background-color: white;
+}
+
+.card-header h3{
+    color: #240046; 
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.875rem); 
+    line-height: clamp(1.5rem, 2.5vw, 2.125rem);
+}
+
+.myBorder {
+    border: 2.3rem solid #fac97a;
+}
+
+.down-profile-text {
+    font-weight: 600;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    color: #111111;    
+    margin-left: clamp(1rem, 6vw, 6rem);
+
+}
+
+.main-content, .side-navigation {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.booking-text {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-left: clamp(0rem, 9vw, 9rem);
+    font-weight: 400;
+    color: #240046;
+
+}

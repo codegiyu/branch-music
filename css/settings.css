@@ -1,0 +1,147 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, main {
+    background: white;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.side-navigation-wrap {
+    box-shadow: 0 10px 20px rgba(36, 0, 70, 0.05);
+}
+
+.side-navigation-wrap > ul > li > a {
+    width: 100%;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: #240046;
+}
+
+.side-navigation-wrap ul li.active, .side-navigation-wrap ul li:hover {
+    background: #240046;
+}
+
+.side-navigation-wrap ul li.active p, .side-navigation-wrap ul li:hover p {
+    color: white;
+}
+
+.side-navigation-wrap ul li.active a .side-navigation-menu-icon, 
+.side-navigation-wrap ul li:hover a .side-navigation-menu-icon {
+    background: white;
+}
+
+.side-navigation-wrap > ul > li.active > a > .side-navigation-list-wrap > .side-navigation-menu-icon > .side-navigation-icons,
+.side-navigation-wrap > ul > li:hover > a > .side-navigation-list-wrap > .side-navigation-menu-icon > .side-navigation-icons {
+    color: #240046;
+}
+
+.side-navigation-menu-icon {
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(#240046, #cfb2eb);
+}
+
+.side-navigation-wrap > ul > li > a > .side-navigation-list-wrap > .side-navigation-menu-icon > .side-navigation-icons {
+    width: 1.5rem;
+    color: #ffffff;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.settings-box {
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 7px 15px rgba(39,0,70,0.1);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.settings-header {
+    font-size: clamp(1.65rem, 2vw, 2.25rem);
+    line-height: 1.33;
+    font-weight: 700;
+}
+
+.profile-picture-section {
+    width: 20%;
+}
+
+@media only screen and (max-width: 991px) {
+    .profile-picture-section {
+        width: 100%;
+    }
+}
+
+.profile-picture-container {
+    border-right: 1px solid black;
+}
+
+@media only screen and (max-width: 991px) {
+    .profile-picture-container {
+        border-right: none;
+    }
+}
+
+.basic-info-inputs {
+    width: 80%;
+}
+
+@media only screen and (max-width: 991px) {
+    .basic-info-inputs {
+        width: 100%;
+    }
+}
+
+.profile-picture {
+    width: 75%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-fs-md {
+    font-size: 1.5rem;
+    line-height: 1.33;
+}
+
+.settings-fs-sm {
+    font-size: 1.125rem;
+    line-height: 1.33;
+}
+
+.settings-fs-xs {
+    font-size: 1rem;
+    line-height: 1.33;
+}
+
+.input-box input, .input-long textarea {
+    margin-top: 0.75rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.radio-label {
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.delete-button {
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 7px 15px rgba(36,0,70,0.1);
+}

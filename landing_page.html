@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Branch Music</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body class="bg-white">
+    <a id="back-to-top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+    <header class="bg-white shadow-sm">
+        <div class="container-fluid py-0 px-lg-5 px-md-3 px-2">
+            <div class="d-flex align-items-center justify-content-between p-0">
+                <div class="nav-left d-flex align-items-center ps-lg-5 ps-md-4">
+                    <a class="mobile-hamburger-icon d-block d-lg-none d-xl-none d-xxl-none me-1 me-md-3" data-bs-toggle="offcanvas" href="#side-nav" role="button" aria-controls="side-nav">
+                        <img src="img/Vectormenu.png" alt=""> 
+                    </a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="side-nav" aria-labelledby="side-nav-label">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="side-nav-label"></h5>
+                            <a href="index.html" class="sidenav-brand">
+                                <div class="sidenav-logo">
+                                    <img src="img/logo 1nav.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body w-100">
+                            <ul class="w-100 list-unstyled">
+                                <li class="d-flex active">
+                                    <a href="index.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="eva:home-fill" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Home</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="instrumentalist.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="icon-park-solid:music" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Instrumentalist</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="user/messages.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="ic:round-mail" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Messages</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="explore.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="majesticons:compass-2" data-rotate="270deg" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Explore</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="about/overview.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="ant-design:question-circle-filled" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">About Us</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="contact.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="teenyicons:user-square-solid" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Contact Us</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="settings.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                    <span class="iconify sidenav-icons" data-icon="bi:gear-fill" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Settings</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="index.html" class="navbar-brand">
+                        <div class="nav-logo">
+                            <img src="img/logo 1nav.png" alt="" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-right d-flex pe-lg-5 pe-md-4">
+                    <a href="/about/how_it_works.html" class="text-decoration-none">
+                        <div class="nav-notifications d-flex align-items-center pe-lg-4 pe-md-2 pe-1">
+                            <p class="text-dark fw-bold m-0">How it Works</p>
+                        </div>
+                    </a>
+                    <a href="login.html" class="text-decoration-none">
+                        <div class="nav-notifications d-flex align-items-center pe-lg-4 pe-md-2 pe-1 border-end border-dark">
+                            <p class="text-dark fw-bold m-0">Log in</p>
+                        </div>
+                    </a>
+                    <a href="signup.html" class="text-decoration-none">
+                        <div class="nav-user d-flex justify-content-center align-items-center ps-lg-4 ps-md-2 ps-1">
+                            <p class="text-dark fw-bold m-0 ms-1">Create an account</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="community">
+        <div class="community-image">
+            <div class="container community-image-wrap py-5"> 
+                <div class="center py-5 my-lg-5 my-md-3 my-0 text-white" >
+                    <h4 class="fs-2">WORLD’S LARGEST INSTRUMENTALIST MARKETPLACE</h4>
+                    <p class="pt-3 pb-5 fs-3">We connect over 2,346 employers and Instrumentalists nationwide<br> from over 25 cities and states</p>
+                    <button class="btn btn-primary px-5" type="submit">Create an Account</button>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section id="instrumentalist-community" class="instrumentalist-community bg-white">
+        <div class="container">
+            <div class="d-flex flex-lg justify-content-around align-items-lg-center  py-5">
+                <p class="d-lg-block d-none">Join our community of Instrumentalists</p>
+                <button class="btn btn-primary-2 px-5" type="submit">Join</button>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 position-relative mb-3">
+                    <div class="card">
+                        <img src="img/KEYBOARDIST.png" class="img-fluid" alt="" style="border-radius: 15px;">
+                        <div class="position-absolute img-fluid text-white board"><h3>KEYBOARDIST</h3></div>  
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 position-relative mb-3">
+                    <div class="card">
+                        <img src="img/VIOLINIST.png" class="img-fluid" style="border-radius: 15px;" alt="">
+                        <div class="position-absolute img-fluid text-white board"><h3>VIOLINIST</h3></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 position-relative mb-3">
+                    <div class="card">
+                        <img src="img/SAXOPHONIST.png" class="img-fluid" alt="" style="border-radius: 15px;">
+                        <div class="position-absolute img-fluid text-white board"><h3>SAXOPHONIST</h3></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 position-relative mb-3">
+                    <div class="card">
+                        <img src="img/DRUMMER.png" class="img-fluid" alt="" style="border-radius: 15px;">
+                        <div class="position-absolute img-fluid text-white board"><h3>DRUMMER</h3></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary-2 px-5 ms-5 my-5" type="submit">Get started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="featured-service" class=" bg-white py-5">
+        <div class="container">
+            <div class="text-center pb-5">
+                <h4 class="text-primary fs-2">FEATURED SERVICES</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="image-div position-relative">
+                                <img src="/img/MIX ENGINEER.png" class="img-fluid" alt="" style="border-radius: 15px;">
+                                <div class="position-absolute img-fluid text-white board"><h3>MIX ENGINEER</h3></div>
+                            </div>
+                            <p class="pt-3">I am a professional mix enginner with over 3 years of experience,  my past works and recommendation speaks for me.</p>
+                            <div class="d-flex pb-3 align-items-center">  
+                                <div>
+                                    <img src="/img/Olajide charles.png" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="ps-3 ">
+                                    <p>Olajide Charles</p>
+                                    <div class="d-flex text-warning">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="image-div position-relative">
+                                <img src="/img/VOICEOVER ARTIST.png" class="img-fluid" alt="" style="border-radius: 15px;">
+                                <div class="position-absolute img-fluid text-white board"><h3>VOICEOVER ARTIST</h3></div>
+                            </div>
+                            <p class="pt-3">If you ever need a voice over artist for your commercials, I am available and I offer a free demo to all prospective clients.</p>
+                            <div class="d-flex pb-3 align-items-center">  
+                                <div>
+                                    <img src="/img/Aisha Salis.png" class="img-fluid rounded-circle" alt="">
+                                </div>
+                                <div class="ps-3 ">
+                                    <p>Aisha Salis</p>
+                                    <div class="d-flex text-warning">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section id="sponsors" class="bg-white">
+        <div class="container">
+            <h4 class="text-center text-primary pb-3"> OUR SPONSORS</h4>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body cd-bd-sm">
+                            <img src="/img/MICHAEL RHODA.png" class="img-fluid rounded-circle" alt="">
+                            <h5 class="py-3">Miss Michael Rhoda</h5>
+                            <p>Having several grammy awards to her name, Miss Michael is someone who looks for opportunities to take in young and budding instrumentalists.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body cd-bd-sm">
+                            <img src="/img/MR UCHENNA.png" class="img-fluid rounded-circle" alt="">
+                            <h5 class="py-3">Mr. Uchenna Nwafor</h5>
+                            <p class="pb-4">The oscar winning Mr. Uchenna has shown what it takes to strive in the field and he is one of our proud sponsors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body cd-bd-sm">
+                            <img src="/img/MISS ABISOLA.png" class="img-fluid rounded-circle" alt="">
+                            <h5 class="py-3">Miss Abisola Okunlola </h5>
+                            <p>An enterpreneur with connections, Miss Abisola has assisted in ensuring our talents get prospective clients through her influence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <section id="testimonies" class=" bg-white py-5">
+        <div class="container">
+            <h4 class="text-center text-primary pb-5">TESTIMONIES</h4>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="card-body">
+                        <div class="d-flex pb-3">
+                            <div class="test-img">                    
+                                <img src="/img/Wisdom Odee.png" class="img-fluid rounded-circle" style="width: 200px;" alt="">
+                            </div>
+                            <div class="test-text ps-3">
+                                 <h5 class="fs-4">Wisdom Odee</h5>
+                                 <p>Thanks to this platform I found a professional saxophonist for my occasion, I was really blown away by the performance!</p>
+                            </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="test-img">                    
+                                    <img src="/img/Said Oseni.png" class="img-fluid rounded-circle" style="width: 200px;" alt="">
+                                </div>
+                                <div class="test-text ps-3">
+                                    <h5 class="fs-4">Shaid Oseni</h5>
+                                    <p>I believe one of the decisions that I am happy about in my career is signup for this platform, It allows me connect to a widerange of people with just a few clicks.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="card-body">
+                        <div class="d-flex pb-3">
+                            <div class="test-img">                    
+                                <img src="/img/Bankole Israel.png" class="img-fluid rounded-circle" style="width: 200px;" alt="">
+                            </div>
+                            <div class="test-text ps-3">
+                                <h5 class="fs-4">Bankole Israel</h5>
+                                <p>I have been looking for a platform to showcase what I do, Branch Music has given me that. I am really grateful.</p>
+                            </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="test-img">                    
+                                    <img src="/img/Emem Mbre.png" class="img-fluid rounded-circle" style="width: 200px;" alt="">
+                                </div>
+                                <div class="test-text ps-3">
+                                    <h5 class="fs-4">Emem Mbre</h5>
+                                    <p>Listening to top rated musicians and intrumentatlist has never been easier. This website is extremly good.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary-2 px-5 ms-5 my-5" type="submit">Get started</button>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid py-5">
+        <div class="container py-5 mt-lg-5">
+            <div class="row text-white mt-lg-5 pt-lg-5">
+                <div class="col-lg-4  mt-lg-5 col-12 d-flex flex-lg-row flex-column justify-content-between">
+                    <div class="footer-branch-music d-flex flex-column mb-lg-0 mb-5">
+                        <h6 class="footer-header mb-3">Branch Music</h6>
+                        <a href="index.html" class="footer-text my-2 py-1 text-decoration-none text-white">Home</a>
+                        <a href="instrumentalist.html" class="footer-text my-2 py-1 text-decoration-none text-white">Instrumentalist</a>
+                        <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Our Service</a>
+                        <a href="explore.html" class="footer-text my-2 py-1 text-decoration-none text-white">Explore</a>
+                    </div>
+                    <div class="footer-about d-flex flex-column pe-4 mb-lg-0 mb-5">
+                        <h6 class="footer-header mb-3">About</h6>
+                        <a href="about/overview.html" class="footer-text my-2 py-1 text-decoration-none text-white">Overview</a>
+                        <a href="about/how_it_works.html" class="footer-text my-2 py-1 text-decoration-none text-white">How It Works</a>
+                        <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Analytics</a>
+                        <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Sponsors</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-lg-5 col-12 d-flex flex-column mb-lg-0 mb-5">
+                    <h6 class="footer-header mb-3">Terms</h6>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Privacy Policy</a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Terms of Service</a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Copyright Policy</a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Fee and Charges</a>
+                </div>
+                <div class="col-lg-2 mt-lg-5 col-12 d-flex flex-column mb-lg-0 mb-5">
+                    <h6 class="footer-header mb-3">Contact Us</h6>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="img/VectorFB.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">Facebook</p>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="img/VectorTW.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">Twitter</p>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="img/VectorIG.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">Instagram</p>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="img/VectorYT.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">YouTube</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-12 d-flex mt-lg-5 flex-column pe-lg-0 pe-5">
+                    <h6 class="footer-header mb-4">Honestly, we think you'll love our newsletter</h6>
+                    <p class="footer-text mb-4">Subscribe to receive latest updates about Branch music, instrumentalists</p>
+                    <form action="" method="post">
+                        <div class="footer-form-wrap d-flex">
+                            <input type="email" name="email" id="" class="py-2 ps-4 pe-3" placeholder="Email address">
+                            <button type="submit" class="pt-1"><i class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="js/header_footer.js"></script>
+</body>
+</html>

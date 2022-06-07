@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111111;
+    background-color: #f5f5f5;
+    line-height: 1.375;
+}
+#back-to-top {
+    display: inline-block;
+    background-color: #222428;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+  
+#back-to-top i {
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 40px;
+    color: #f2f2f2;
+}
+  
+#back-to-top:hover {
+    cursor: pointer;
+    background-color: #001233;
+}
+  
+#back-to-top:active {
+    background-color: #001233;
+}
+  
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Header Styling Begins */
+.mobile-hamburger-icon img {
+    width: clamp(14px, 1.5vw, 1.5rem);
+}
+
+.mobile-menu-icon {
+    width: 2rem;
+}
+
+.offcanvas {
+    max-width: 250px;
+}
+
+.offcanvas-body > ul > li > a {
+    width: 100%;
+    text-align: start;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: #240046;
+}
+
+.offcanvas-body ul li.active, .offcanvas-body ul li:hover {
+    background: #240046;
+}
+
+.offcanvas-body ul li.active p, .offcanvas-body ul li:hover p {
+    color: white;
+}
+
+.offcanvas-body ul li.active a .mobile-nav-menu-icon, 
+.offcanvas-body ul li:hover a .mobile-nav-menu-icon {
+    background: white;
+}
+
+.offcanvas-body > ul > li.active > a > .sidenav-wrap > .mobile-nav-menu-icon > .sidenav-icons,
+.offcanvas-body > ul > li:hover > a > .sidenav-wrap > .mobile-nav-menu-icon > .sidenav-icons {
+    color: #240046;
+}
+
+.mobile-nav-menu-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: linear-gradient(#240046, #cfb2eb);
+}
+
+.offcanvas-body > ul > li > a > .sidenav-wrap > .mobile-nav-menu-icon > .sidenav-icons {
+    width: 1rem;
+    color: #ffffff;
+}
+
+.navbar-brand img {
+    width: clamp(60px, 8vw, 9.5rem);
+}
+
+.nav-left form {
+    width: clamp(85px, 25vw, 30rem);
+    height: 80%;
+    font-size: clamp(8px, 1.5vw, 1rem);
+    line-height: 1.5;
+}
+
+.nav-left form input {
+    font-size: inherit;
+    line-height: 100%;
+    padding-left: clamp(27px, 4vw, 4.5rem);
+}
+
+.nav-left form button {
+    outline: transparent;
+    border: transparent;
+    height: calc(100% - 2px);
+    top: 1px;
+    left: 1px;
+
+}
+
+.nav-left form button img {
+    width: clamp(10px, 1.5vw, 1.5rem);
+}
+
+.nav-right {
+    font-size: clamp(8px, 1.5vw, 1rem);
+    line-height: 1.5;
+}
+
+.bell-img img {
+    width: clamp(10px, 2vw, 1.5rem);
+    height: clamp(10px, 2vw, 1.5rem);
+}
+
+.nav-user p {
+    line-height: 1.5;
+}
+
+.user-img {
+    width: clamp(15px, 2.5vw, 2.5rem);
+    height: clamp(15px, 2.5vw, 2.5rem);
+    background-color: rgb(196, 196, 196);
+}
+
+.user-img img {
+    width: clamp(10px, 1.5vw, 1.5rem);
+    height: clamp(10px, 1.5vw, 1.5rem);
+}
+
+footer {
+    background: url("../img/footer-background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 992px) {
+    footer {
+        background: #002137;
+    }
+}
+
+.footer-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.footer-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+footer form .footer-form-wrap{
+    width: 100%;
+}
+
+footer form input {
+    width: 87.5%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* padding-left: 20px; */
+    outline: none;
+    border: 1px solid #240046;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+}
+
+footer form button {
+    width: 12.5%;
+    outline: none;
+    border: none;
+    background: #240046;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}

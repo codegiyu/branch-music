@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instrumentalist | Branch Music</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/instrumentalist.css" />
+    <link rel="stylesheet" href="css/header_footer.css" />
+    <link rel="stylesheet" href="css/settings.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <a id="back-to-top"
+      ><i class="bi bi-arrow-up-short" aria-hidden="true"></i
+    ></a>
+    <header class="bg-white shadow-sm">
+      <div class="container-fluid py-0 px-lg-5 px-md-3 px-2">
+        <div class="d-flex align-items-center justify-content-between p-0">
+          <div class="nav-left d-flex align-items-center ps-lg-5 ps-md-4">
+            <a
+              class="mobile-hamburger-icon d-block d-lg-none d-xl-none d-xxl-none me-1 me-md-3"
+              data-bs-toggle="offcanvas"
+              href="#side-nav"
+              role="button"
+              aria-controls="side-nav"
+            >
+              <img src="img/Vectormenu.png" alt="" />
+            </a>
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="side-nav"
+              aria-labelledby="side-nav-label"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="side-nav-label"></h5>
+                <a href="index.html" class="sidenav-brand">
+                  <div class="sidenav-logo">
+                    <img src="img/logo 1nav.png" alt="" class="img-fluid" />
+                  </div>
+                </a>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body w-100">
+                <ul class="w-100 list-unstyled">
+                  <li class="d-flex">
+                    <a
+                      href="index.html"
+                      class="d-flex ps-5 py-2 text-decoration-none"
+                    >
+                      <div
+                        class="sidenav-wrap p-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                        >
+                          <span
+                            class="iconify sidenav-icons"
+                            data-icon="eva:home-fill"
+                            data-width="15"
+                            data-height="15"
+                          ></span>
+                        </div>
+                        <p class="m-0">Home</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="d-flex">
+                    <a
+                      href="instrumentalist.html"
+                      class="d-flex ps-5 py-2 text-decoration-none"
+                    >
+                      <div
+                        class="sidenav-wrap p-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                        >
+                          <span
+                            class="iconify sidenav-icons"
+                            data-icon="icon-park-solid:music"
+                            data-width="15"
+                            data-height="15"
+                          ></span>
+                        </div>
+                        <p class="m-0">Instrumentalist</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="d-flex">
+                    <a
+                      href="user/messages.html"
+                      class="d-flex ps-5 py-2 text-decoration-none"
+                    >
+                      <div
+                        class="sidenav-wrap p-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                        >
+                          <span
+                            class="iconify sidenav-icons"
+                            data-icon="ic:round-mail"
+                            data-width="15"
+                            data-height="15"
+                          ></span>
+                        </div>
+                        <p class="m-0">Messages</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="d-flex">
+                    <a
+                      href="explore.html"
+                      class="d-flex ps-5 py-2 text-decoration-none"
+                    >
+                      <div
+                        class="sidenav-wrap p-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                        >
+                          <span
+                            class="iconify sidenav-icons"
+                            data-icon="majesticons:compass-2"
+                            data-rotate="270deg"
+                            data-width="15"
+                            data-height="15"
+                          ></span>
+                        </div>
+                        <p class="m-0">Explore</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="d-flex">
+                    <a
+                      href="about/overview.html"
+                      class="d-flex ps-5 py-2 text-decoration-none"
+                    >
+                      <div
+                        class="sidenav-wrap p-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                        >
+                          <span
+                            class="iconify sidenav-icons"
+                            data-icon="ant-design:question-circle-filled"
+                            data-width="15"
+                            data-height="15"
+                          ></span>
+                        </div>
+                        <p class="m-0">About Us</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="d-flex">
+                    <a
+                      href="contact.html"
+                      class="d-flex ps-5 py-2 text-decoration-none"
+                    >
+                      <div
+                        class="sidenav-wrap p-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                        >
+                          <span
+                            class="iconify sidenav-icons"
+                            data-icon="teenyicons:user-square-solid"
+                            data-width="15"
+                            data-height="15"
+                          ></span>
+                        </div>
+                        <p class="m-0">Contact Us</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="d-flex active">
+                    <a
+                      href="settings.html"
+                      class="d-flex ps-5 py-2 text-decoration-none"
+                    >
+                      <div
+                        class="sidenav-wrap p-0 d-flex align-items-center justify-content-center"
+                      >
+                        <div
+                          class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                        >
+                          <span
+                            class="iconify sidenav-icons"
+                            data-icon="bi:gear-fill"
+                            data-width="15"
+                            data-height="15"
+                          ></span>
+                        </div>
+                        <p class="m-0">Settings</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="index.html" class="navbar-brand">
+              <div class="nav-logo">
+                <img src="img/logo 1nav.png" alt="" class="img-fluid" />
+              </div>
+            </a>
+            <form class="d-flex position-relative ms-lg-4 ms-0">
+              <input
+                class="form-control me-2 border-dark"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="position-absolute px-2 bg-white rounded"
+                type="submit"
+              >
+                <img src="img/Search.png" alt="" class="" />
+              </button>
+            </form>
+          </div>
+          <div class="nav-right d-flex align-items-center pe-lg-5 pe-md-4">
+            <a href="#" class="text-decoration-none">
+              <div
+                class="nav-notifications d-flex align-items-center pe-lg-4 pe-md-2 pe-1 border-end border-dark"
+              >
+                <p class="text-dark fw-bold m-0">Notifications</p>
+                <div class="bell-img d-flex align-items-center">
+                  <img src="img/Bell_pin_fillbell.png" alt="" class="" />
+                </div>
+              </div>
+            </a>
+            <a href="user/profile.html" class="text-decoration-none">
+              <div
+                class="nav-user d-flex justify-content-center align-items-center ps-lg-4 ps-md-2 ps-1"
+              >
+                <div
+                  class="user-img d-flex align-items-center justify-content-center rounded-circle p-0"
+                >
+                  <img src="img/User_filluser.png" alt="" class="m-0" />
+                </div>
+                <p class="text-dark fw-bold m-0 ms-1">John Doe</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="row p-0">
+        <div class="side-navigation col-lg-3 d-lg-block d-none pe-xl-5 pe-4">
+          <div class="side-navigation-wrap py-5">
+            <ul class="w-100 list-unstyled mb-5">
+              <li class="d-flex">
+                <a
+                  href="index.html"
+                  class="d-flex ps-xl-5 ps-lg-3 py-3 my-1 text-decoration-none"
+                >
+                  <div
+                    class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="iconify side-navigation-icons"
+                        data-icon="eva:home-fill"
+                        data-width="20"
+                        data-height="20"
+                      ></span>
+                    </div>
+                    <p class="m-0">Home</p>
+                  </div>
+                </a>
+              </li>
+              <li class="d-flex active">
+                <a
+                  href="instrumentalist.html"
+                  class="d-flex ps-xl-5 ps-lg-3 py-3 my-1 text-decoration-none"
+                >
+                  <div
+                    class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="iconify side-navigation-icons"
+                        data-icon="icon-park-solid:music"
+                        data-width="20"
+                        data-height="20"
+                      ></span>
+                    </div>
+                    <p class="m-0">Instrumentalist</p>
+                  </div>
+                </a>
+              </li>
+              <li class="d-flex">
+                <a
+                  href="user/messages.html"
+                  class="d-flex ps-xl-5 ps-lg-3 py-3 my-1 text-decoration-none"
+                >
+                  <div
+                    class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="iconify side-navigation-icons"
+                        data-icon="ic:round-mail"
+                        data-width="20"
+                        data-height="20"
+                      ></span>
+                    </div>
+                    <p class="m-0">Messages</p>
+                  </div>
+                </a>
+              </li>
+              <li class="d-flex">
+                <a
+                  href="explore.html"
+                  class="d-flex ps-xl-5 ps-lg-3 py-3 my-1 text-decoration-none"
+                >
+                  <div
+                    class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="iconify side-navigation-icons"
+                        data-icon="majesticons:compass-2"
+                        data-rotate="270deg"
+                        data-width="20"
+                        data-height="20"
+                      ></span>
+                    </div>
+                    <p class="m-0">Explore</p>
+                  </div>
+                </a>
+              </li>
+              <li class="d-flex">
+                <a
+                  href="about/overview.html"
+                  class="d-flex ps-xl-5 ps-lg-3 py-3 my-1 text-decoration-none"
+                >
+                  <div
+                    class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="iconify side-navigation-icons"
+                        data-icon="ant-design:question-circle-filled"
+                        data-width="20"
+                        data-height="20"
+                      ></span>
+                    </div>
+                    <p class="m-0">About Us</p>
+                  </div>
+                </a>
+              </li>
+              <li class="d-flex">
+                <a
+                  href="contact.html"
+                  class="d-flex ps-xl-5 ps-lg-3 py-3 my-1 text-decoration-none"
+                >
+                  <div
+                    class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="iconify side-navigation-icons"
+                        data-icon="teenyicons:user-square-solid"
+                        data-width="20"
+                        data-height="20"
+                      ></span>
+                    </div>
+                    <p class="m-0">Contact Us</p>
+                  </div>
+                </a>
+              </li>
+              <li class="d-flex">
+                <a
+                  href="settings.html"
+                  class="d-flex ps-xl-5 ps-lg-3 py-3 my-1 text-decoration-none"
+                >
+                  <div
+                    class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center"
+                    >
+                      <span
+                        class="iconify side-navigation-icons"
+                        data-icon="bi:gear-fill"
+                        data-width="20"
+                        data-height="20"
+                      ></span>
+                    </div>
+                    <p class="m-0">Settings</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="main-content col-lg-9 col-12 ps-1 pe-1 ps-md-5 pe-md-5 ps-lg-2 pe-lg-5 py-5"
+        >
+          <div class="right-section container ps-3 ms-lg-5">
+            <h2 class="onli-text mb-4 ms-lg-4">Categories</h2>
+            <div class="row justify-content-center container">
+              <div class="col-lg-4 col-md-4 col-4">
+                <div class="card border-light text-white mb-2">
+                  <img
+                    src="img/Pianist.png"
+                    class="card-img img-fluid"
+                    alt="..."
+                    cl
+                  />
+                  <div class="card-img-overlay ms-2">
+                    <h6 class="card-title mb-0">Pianist</h6>
+                    <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                  </div>
+                </div>
+                <div class="card border-light text-white mb-2">
+                  <img
+                    src="img/Violinist.png"
+                    class="card-img img-fluid pic"
+                    alt="..."
+                    cl
+                  />
+                  <div class="card-img-overlay ms-2">
+                    <h6 class="card-title mb-0">Violinist</h6>
+                    <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-8">
+                <div class="top">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-6">
+                      <div class="card border-light text-white mb-2">
+                        <img
+                          src="img/Guitarist.png"
+                          class="card-img img-fluid"
+                          alt="..."
+                          cl
+                        />
+                        <div class="card-img-overlay ms-2">
+                          <h6 class="card-title mb-0">Guitarist</h6>
+                          <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6">
+                      <div class="card border-light text-white p-0">
+                        <img
+                          src="img/drummer.png"
+                          class="card-img img-fluid"
+                          alt="..."
+                          cl
+                        />
+                        <div class="card-img-overlay ms-2">
+                          <h6 class="card-title mb-0">Drummer</h6>
+                          <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom col-lg-12 col-md-12 col-12">
+                  <div class="card border-light text-white p-0">
+                    <img
+                      src="img/Trumpter.png"
+                      class="card-img img-fluid"
+                      alt="..."
+                      cl
+                    />
+                    <div class="card-img-overlay ms-2">
+                      <h6 class="card-title mb-0">Trumpeter</h6>
+                      <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="view-more">
+              <div class="row justify-content-center container">
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="card border-light text-white mb-2">
+                    <img
+                      src="img/xylophone.png"
+                      class="card-img img-fluid"
+                      alt="..."
+                      cl
+                    />
+                    <div class="card-img-overlay ms-2">
+                      <h6 class="card-title mb-0">Xylophonist</h6>
+                      <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-row">
+                <div class="row justify-content-center container">
+                  <div class="col-lg-4 col-md-4 col-4">
+                    <div class="card border-light text-white mb-2">
+                      <img
+                        src="img/trombonist.png"
+                        class="card-img img-fluid"
+                        alt="..."
+                        cl
+                      />
+                      <div class="card-img-overlay ms-2">
+                        <h6 class="card-title mb-0">Trombonist</h6>
+                        <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                      </div>
+                    </div>
+                    <div class="card border-light text-white mb-2">
+                      <img
+                        src="img/drummer 2.png"
+                        class="card-img img-fluid pic"
+                        alt="..."
+                        cl
+                      />
+                      <div class="card-img-overlay ms-2">
+                        <h6 class="card-title mb-0">Drummer</h6>
+                        <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-8">
+                    <div class="top">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-6">
+                          <div class="card border-light text-white mb-2">
+                            <img
+                              src="img/clarinetist.png"
+                              class="card-img img-fluid"
+                              alt="..."
+                              cl
+                            />
+                            <div class="card-img-overlay ms-2">
+                              <h6 class="card-title mb-0">clarinetist</h6>
+                              <a href="instrumentalist/full_detail.html" class="card-text text-warning"
+                                >Explore</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-6">
+                          <div class="card border-light text-white mb-2">
+                            <img
+                              src="img/Flutist.png"
+                              class="card-img img-fluid"
+                              alt="..."
+                              cl
+                            />
+                            <div class="card-img-overlay ms-2">
+                              <h6 class="card-title mb-0">Flutist</h6>
+                              <a href="instrumentalist/full_detail.html" class="card-text text-warning"
+                                >Explore</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom col-lg-12 col-md-12 col-12">
+                      <div class="card border-light text-white mb-2">
+                        <img
+                          src="img/Talking drum 2.png"
+                          class="card-img img-fluid"
+                          alt="..."
+                        />
+                        <div class="card-img-overlay ms-2">
+                          <h6 class="card-title mb-0">Talking drummer</h6>
+                          <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fourth-row">
+                <div class="row justify-content-center container">
+                  <div class="col-lg-4 col-md-4 col-4">
+                    <div class="card border-light text-white mb-2">
+                      <img
+                        src="img/bassist.png"
+                        class="card-img img-fluid"
+                        alt="..."
+                        cl
+                      />
+                      <div class="card-img-overlay ms-2">
+                        <h6 class="card-title mb-0">Bassist</h6>
+                        <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                      </div>
+                    </div>
+                    <div class="card border-light text-white mb-2">
+                      <img
+                        src="img/flutist 2.png"
+                        class="card-img img-fluid pic"
+                        alt="..."
+                        cl
+                      />
+                      <div class="card-img-overlay ms-2">
+                        <h6 class="card-title mb-0">Flutist</h6>
+                        <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-8">
+                    <div class="top">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-6">
+                          <div class="card border-light text-white mb-2">
+                            <img
+                              src="img/Bass.png"
+                              class="card-img img-fluid"
+                              alt="..."
+                              cl
+                            />
+                            <div class="card-img-overlay ms-2">
+                              <h6 class="card-title mb-0">Bass</h6>
+                              <a href="instrumentalist/full_detail.html" class="card-text text-warning"
+                                >Explore</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-6">
+                          <div class="card border-light text-white mb-2">
+                            <img
+                              src="img/Harpist.png"
+                              class="card-img img-fluid"
+                              alt="..."
+                              cl
+                            />
+                            <div class="card-img-overlay ms-2">
+                              <h6 class="card-title mb-0">Harpist</h6>
+                              <a href="instrumentalist/full_detail.html" class="card-text text-warning"
+                                >Explore</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom col-lg-12 col-md-12 col-12">
+                      <div class="card border-light text-white p-0">
+                        <img
+                          src="img/guitarist 2.png"
+                          class="card-img img-fluid"
+                          alt="..."
+                          cl
+                        />
+                        <div class="card-img-overlay ms-2">
+                          <h6 class="card-title mb-0">Guitarist</h6>
+                          <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row container">
+                <div class="col-lg-12 col-md-12 col-12">
+                  <div class="harp mb-2">
+                    <div class="card border-light text-white mb-2">
+                      <img
+                        src="img/harp.png"
+                        class="card-img img-fluid"
+                        alt="..."
+                        cl
+                      />
+                      <div class="card-img-overlay ms-2">
+                        <h6 class="card-title mb-0">Harp</h6>
+                        <a href="instrumentalist/full_detail.html" class="card-text text-warning">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row view-btn py-5">
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="text-center">
+                  <button
+                    onclick="toggleSection()"
+                    id="sectionButton"
+                    class="text-light fw-semibold fs-5 px-5 py-2 rounded-3"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid py-5 px-lg-0">
+      <div class="container py-5 mt-lg-5">
+        <div class="row text-white mt-lg-5 pt-lg-5">
+          <div
+            class="col-lg-4 col-12 d-flex flex-lg-row flex-column justify-content-between"
+          >
+            <div class="footer-branch-music d-flex flex-column mb-lg-0 mb-5">
+              <h6 class="footer-header mb-3">Branch Music</h6>
+              <a
+                href="index.html"
+                class="footer-text my-2 py-1 text-decoration-none text-white"
+                >Home</a
+              >
+              <a
+                href="instrumentalist.html"
+                class="footer-text my-2 py-1 text-decoration-none text-white"
+                >Instrumentalist</a
+              >
+              <a
+                href="#"
+                class="footer-text my-2 py-1 text-decoration-none text-white"
+                >Our Service</a
+              >
+              <a
+                href="explore.html"
+                class="footer-text my-2 py-1 text-decoration-none text-white"
+                >Explore</a
+              >
+            </div>
+            <div class="footer-about d-flex flex-column pe-4 mb-lg-0 mb-5">
+              <h6 class="footer-header mb-3">About</h6>
+              <a
+                href="about/overview.html"
+                class="footer-text my-2 py-1 text-decoration-none text-white"
+                >Overview</a
+              >
+              <a
+                href="about/how_it_works.html"
+                class="footer-text my-2 py-1 text-decoration-none text-white"
+                >How It Works</a
+              >
+              <a
+                href="#"
+                class="footer-text my-2 py-1 text-decoration-none text-white"
+                >Analytics</a
+              >
+              <a
+                href="#"
+                class="footer-text my-2 py-1 text-decoration-none text-white"
+                >Sponsors</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-2 col-12 d-flex flex-column mb-lg-0 mb-5">
+            <h6 class="footer-header mb-3">Terms</h6>
+            <a
+              href="#"
+              class="footer-text my-2 py-1 text-decoration-none text-white"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="footer-text my-2 py-1 text-decoration-none text-white"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="footer-text my-2 py-1 text-decoration-none text-white"
+              >Copyright Policy</a
+            >
+            <a
+              href="#"
+              class="footer-text my-2 py-1 text-decoration-none text-white"
+              >Fee and Charges</a
+            >
+          </div>
+          <div class="col-lg-2 col-12 d-flex flex-column mb-lg-0 mb-5">
+            <h6 class="footer-header mb-3">Contact Us</h6>
+            <a
+              href="#"
+              class="footer-text my-2 py-1 text-decoration-none text-white"
+            >
+              <div class="d-flex align-items-center">
+                <img src="img/VectorFB.png" alt="" class="me-2" width="18px" />
+                <p class="m-0">Facebook</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="footer-text my-2 py-1 text-decoration-none text-white"
+            >
+              <div class="d-flex align-items-center">
+                <img src="img/VectorTW.png" alt="" class="me-2" width="18px" />
+                <p class="m-0">Twitter</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="footer-text my-2 py-1 text-decoration-none text-white"
+            >
+              <div class="d-flex align-items-center">
+                <img src="img/VectorIG.png" alt="" class="me-2" width="18px" />
+                <p class="m-0">Instagram</p>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="footer-text my-2 py-1 text-decoration-none text-white"
+            >
+              <div class="d-flex align-items-center">
+                <img src="img/VectorYT.png" alt="" class="me-2" width="18px" />
+                <p class="m-0">YouTube</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-12 d-flex flex-column pe-lg-0 pe-5">
+            <h6 class="footer-header mb-4">
+              Honestly, we think you'll love our newsletter
+            </h6>
+            <p class="footer-text mb-4">
+              Subscribe to receive latest updates about Branch music,
+              instrumentalists
+            </p>
+            <form action="" method="post">
+              <div class="footer-form-wrap d-flex">
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  class="py-2 ps-4 pe-3"
+                  placeholder="Email address"
+                  aria-required="true"
+                  required
+                />
+                <button type="submit" class="pt-1">
+                  <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/instrumentalist.js"></script>
+    <script src="js/header_footer.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  </body>
+</html>

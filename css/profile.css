@@ -1,0 +1,137 @@
+/* MAIN PROFILE STYING */
+
+.card-header {
+    background-color: white;
+}
+
+.card-header h3{
+    color: #240046; 
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.875rem); 
+    line-height: clamp(1.5rem, 2.5vw, 2.125rem);
+}
+
+.form-label {
+    color: #240046;
+    font-size: clamp(1.2rem, 2vw, 1.875rem);
+}
+
+.myBorder {
+    border: 2.3rem solid #fac97a;
+    width: 100%;
+}
+
+.down-profile-text {
+    font-weight: 600;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    color: #111111;
+    margin-left: clamp(3rem, 6vw, 6rem);
+
+}
+
+
+.main-content, .side-navigation {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.booking-text {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-left: 9rem;
+    font-weight: 400;
+    color: #240046;
+
+}
+
+.form-group{
+    margin-left: clamp(3rem, 6vw, 6rem);
+
+}
+
+
+
+/* RATINGS */
+
+    .ratings{
+        margin-left: clamp(3rem, 6vw, 6rem);
+
+    }
+
+    .ratings i{
+        
+        color:#cecece;
+        font-size:32px;
+    }
+    
+    .rating-color{
+        color:#fbc634 !important;
+    }
+
+    .label{
+        font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+    }
+    
+    @media only screen and (max-width: 321px) {
+                  
+            .fa {
+                width: 12%;
+            }
+
+            .myIMG1 {
+                margin-left: 2rem !important;
+            }
+    }
+
+    @media only screen and (max-width: 376px) {
+        .myText {
+            margin-left: 1.5rem !important;
+        }
+    }
+
+    @media only screen and (max-width: 426px) {
+        .myIMG {
+            width: 60%;
+            margin-left: 1rem !important;
+        }
+
+        .myText {
+            margin-left: 1.7rem !important;
+        }
+    }
+
+    @media only screen and (max-width: 321px) {
+        .myText {
+            margin-left: 0rem !important;
+        }
+
+        .myIMG {
+            width: 60%;
+        }
+    }
+    
+        
+        .choose {
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            color: #111111;
+        } 
+
+        .minm {
+            font-size: clamp(0.8rem, 2vw, 1.25rem);
+        }
+    
+    /* BUTTON */
+
+    .myBtn1{
+        background:#240046; 
+        width: 10em; 
+        font-weight: 700;
+        font-size: clamp(0.6rem, 1.125vw, 1.125rem);
+    }
+
+    .myBtn2 {
+        color:#240046; 
+        width: 10em; 
+        font-weight: 700;
+        font-size: clamp(0.6rem, 1.125vw, 1.125rem); 
+    }

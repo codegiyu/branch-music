@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/settings.css">
+    <title>Booking | Branch Music</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+</head>
+<body>
+    <a id="back-to-top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm">
+        <div class="container-fluid py-0 px-lg-5 px-md-3 px-2">
+            <div class="d-flex align-items-center justify-content-between p-0">
+                <div class="nav-left d-flex align-items-center ps-lg-5 ps-md-4">
+                    <a class="mobile-hamburger-icon d-block d-lg-none d-xl-none d-xxl-none me-1 me-md-3" data-bs-toggle="offcanvas" href="#side-nav" role="button" aria-controls="side-nav">
+                        <img src="../img/Vectormenu.png" alt=""> 
+                    </a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="side-nav" aria-labelledby="side-nav-label">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="side-nav-label"></h5>
+                            <a href="../index.html" class="sidenav-brand">
+                                <div class="sidenav-logo">
+                                    <img src="../img/logo 1nav.png" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body w-100">
+                            <ul class="w-100 list-unstyled">
+                                <li class="d-flex active">
+                                    <a href="../index.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="eva:home-fill" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Home</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="../instrumentalist.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="icon-park-solid:music" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Instrumentalist</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="../user/messages.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="ic:round-mail" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Messages</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="../explore.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="majesticons:compass-2" data-rotate="270deg" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Explore</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="../about/overview.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="ant-design:question-circle-filled" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">About Us</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="../contact.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                <span class="iconify sidenav-icons" data-icon="teenyicons:user-square-solid" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Contact Us</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="d-flex">
+                                    <a href="../settings.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                        <div class="sidenav-wrap p-0 d-flex align-items-center justify-content-center">
+                                            <div class="mobile-nav-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                                    <span class="iconify sidenav-icons" data-icon="bi:gear-fill" data-width="15" data-height="15"></span>
+                                            </div>
+                                            <p class="m-0">Settings</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="../index.html" class="navbar-brand">
+                        <div class="nav-logo">
+                            <img src="../img/logo 1nav.png" alt="" class="img-fluid">
+                        </div>
+                    </a>
+                    <form class="d-flex position-relative ms-lg-4 ms-0">
+                        <input class="form-control me-2 border-dark" type="search" placeholder="Search" aria-label="Search">
+                        <button class="position-absolute px-2 bg-white rounded" type="submit">
+                            <img src="../img/Search.png" alt="" class="">
+                        </button>
+                    </form>
+                </div>
+                <div class="nav-right d-flex pe-lg-5 pe-md-4">
+                    <a href="#" class="text-decoration-none">
+                        <div class="nav-notifications d-flex align-items-center pe-lg-4 pe-md-2 pe-1 border-end border-dark">
+                            <p class="text-dark fw-bold m-0">Notifications</p>
+                            <div class="bell-img d-flex align-items-center">
+                                <img src="../img/Bell_pin_fillbell.png" alt="" class="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../user/profile.html" class="text-decoration-none">
+                        <div class="nav-user d-flex justify-content-center align-items-center ps-lg-4 ps-md-2 ps-1">
+                            <div class="user-img d-flex align-items-center justify-content-center rounded-circle p-0">
+                                <img src="../img/User_filluser.png" alt="" class="m-0">
+                            </div>
+                            <p class="text-dark fw-bold m-0 ms-1">John Doe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN BOOKING -->
+    <main>
+        <div class="row w-100">
+            <div class="side-navigation col-lg-3 d-lg-block d-none">
+                <div class="side-navigation-wrap py-5">
+
+                    <ul class="w-100 list-unstyled mb-5">
+                        
+                        <li class="d-flex">
+                            <a href="../index.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="eva:home-fill" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Home</p>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="d-flex">
+                            <a href="profile.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="teenyicons:user-square-solid" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Profile</p>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="d-flex">
+                            <a href="../explore.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="majesticons:compass-2" data-rotate="270deg" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Explore</p>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="d-flex active">
+                            <a href="booking.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="uil:clipboard-notes" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">My Bookings</p>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="d-flex">
+                            <a href="messages.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="ic:round-mail" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Messages</p>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="d-flex">
+                            <a href="../settings.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="bi:gear-fill" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Settings</p>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="d-flex">
+                            <a href="../login.html" class="d-flex ps-5 py-2 text-decoration-none">
+                                <div class="side-navigation-list-wrap p-0 d-flex align-items-center justify-content-center">
+                                    <div class="side-navigation-menu-icon me-2 rounded d-flex align-items-center justify-content-center">
+                                        <span class="iconify side-navigation-icons" data-icon="ic:sharp-log-in" data-width="20" data-height="20"></span>
+                                    </div>
+                                    <p class="m-0">Logout</p>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        
+
+
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <div class="main-content col-lg-9 col-12 mb-5 py-1">
+                <!-- <div class="basic-information shadow-sm py-3"></div> -->
+                <div class="card-header">
+                    <h3 class="container mt-2">Bookings</h3>
+                </div>                          
+                
+                <!-- Profile Picture -->
+                <div class="myBorder min-vh-100">
+                    <div class="down-profile-text my-5 ps-5">
+                        <h3>Manage</h3>
+                    </div>
+                                                        
+                    <div class="hr-line mb-5" style="color:#212121;">
+                        <hr>
+                    </div>
+                                                    
+                    <div>
+                        <p class="booking-text">You don't have any  reservations at this moment</h3>
+                    </div>
+                </div>
+        
+        
+            </div>
+            
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="container-fluid py-5">
+        <div class="container py-5 mt-lg-5">
+            <div class="row text-white mt-lg-5 pt-lg-5">
+                <div class="col-lg-4 col-12 d-flex flex-lg-row flex-column justify-content-between">
+                    <div class="footer-branch-music d-flex flex-column mb-lg-0 mb-5">
+                        <h6 class="footer-header mb-3">Branch Music</h6>
+                        <a href="../index.html" class="footer-text my-2 py-1 text-decoration-none text-white">Home</a>
+                        <a href="../instrumentalist.html" class="footer-text my-2 py-1 text-decoration-none text-white">Instrumentalist</a>
+                        <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Our Service</a>
+                        <a href="../explore.html" class="footer-text my-2 py-1 text-decoration-none text-white">Explore</a>
+                    </div>
+                    <div class="footer-about d-flex flex-column pe-4 mb-lg-0 mb-5">
+                        <h6 class="footer-header mb-3">About</h6>
+                        <a href="../about/overview.html" class="footer-text my-2 py-1 text-decoration-none text-white">Overview</a>
+                        <a href="../about/how_it_works.html" class="footer-text my-2 py-1 text-decoration-none text-white">How It Works</a>
+                        <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Analytics</a>
+                        <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Sponsors</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12 d-flex flex-column mb-lg-0 mb-5">
+                    <h6 class="footer-header mb-3">Terms</h6>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Privacy Policy</a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Terms of Service</a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Copyright Policy</a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">Fee and Charges</a>
+                </div>
+                <div class="col-lg-2 col-12 d-flex flex-column mb-lg-0 mb-5">
+                    <h6 class="footer-header mb-3">Contact Us</h6>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="../img/VectorFB.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">Facebook</p>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="../img/VectorTW.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">Twitter</p>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="../img/VectorIG.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">Instagram</p>
+                        </div>
+                    </a>
+                    <a href="#" class="footer-text my-2 py-1 text-decoration-none text-white">
+                        <div class="d-flex align-items-center">
+                            <img src="../img/VectorYT.png" alt="" class="me-2" width="18px">
+                            <p class="m-0">YouTube</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-12 d-flex flex-column pe-lg-0 pe-5">
+                    <h6 class="footer-header mb-4">Honestly, we think you'll love our newsletter</h6>
+                    <p class="footer-text mb-4">Subscribe to receive latest updates about Branch music, instrumentalists</p>
+                    <form action="" method="post">
+                        <div class="footer-form-wrap d-flex">
+                            <input type="email" name="email" id="" class="py-2 ps-4 pe-3" placeholder="Email address">
+                            <button type="submit" class="pt-1"><i class="bi bi-arrow-right-short" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="../js/header_footer.js"></script>
+</body>
+</html>

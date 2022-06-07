@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+.button {
+  display: inline-block;
+  border-radius: 0.8rem;
+  background-color: #240046;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.9rem 2.5rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+  text-decoration: none;
+  }
+.button:after {
+    content: "";
+    background: #240046;
+    display: block;
+    position: absolute;
+    padding-top: 3rem;
+    padding-left: 3.5rem;
+    margin-left: -1.3rem !important;
+    margin-top: -1.2rem;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.banner-section {
+    /* background: linear-gradient(0deg, #CFB2EB,#240046);
+    padding: 10px; */
+    background-image: url('../img/unsplash_vWchRczcQwM.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: clamp(18.313rem, 333vh, 33rem);
+    /*width: 62.5rem;*/
+}
+.banner-section .banner-text {
+    padding: 1.8rem;
+    padding-top: 10.5rem;
+}
+.banner-section .banner-text .heading {
+    font-size: clamp(1,25rem, 2.0vw, 2.5rem);
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.banner-section .banner-text .text {
+    font-weight: 400;
+    font-size: clamp(0.875rem, 1.5vw, 1.5rem);
+    font-family: 'Nunito', sans-serif;
+}
+.call-section .card .card-body h5, .call-section .card .card-body p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: 'Nunito', sans-serif;
+}
+.call-section .card .card-body a {
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.booking-section .card .card-body .card-text {
+    font-weight: 400;
+    font-size: clamp(0.875rem, 1.1vw, 1.1rem);
+    font-family: 'Nunito', sans-serif;
+}
+.call-section {
+    margin-bottom: 9.5rem;
+}
+.call-section .card {
+    height: 11.3rem;
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+form {
+    margin: clamp(1.5rem, 1.5vw, 1.5rem);
+}
+form .row .col label {
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.9vw, 0.9rem);
+    font-family: 'Nunito', sans-serif;
+}
+form .row .col input {
+    border: none;
+    border-bottom: 1px solid #240046;
+    border-radius: 0;
+}
+form .row .col input:focus {
+    outline: none;
+} 
+
+
+.blackcurrant-section {
+    background: #240046;
+    border-radius: 1.3rem;
+    width: auto;
+}
+.blackcurrant-section p {
+    font-weight: 500;
+    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+    font-family: 'Nunito', sans-serif;
+}
+.help-text-box {
+    background: #304FFE4D;
+    border-radius: 1.1rem;
+    padding: 0.6rem;
+}
+.customer-text-box {
+    background-color: #fff;
+    border-radius: 1.3rem;
+    padding: 0.6rem;
+}
+.customer-text-box p {
+    font-weight: 500;
+    font-size: clamp(0.875rem, 0.9vw, 0.9rem);
+    font-family: 'Nunito', sans-serif;
+}
+.help-text-box p {
+    font-weight: 500;
+    font-size: clamp(0.875rem, 0.9vw, 0.9rem);
+    font-family: 'Nunito', sans-serif;
+}
+.push-right {
+    margin-left: 13.0rem !important;
+}
+.rounded-3 {
+    border-radius: 1.3rem !important;
+}
+.push-left {
+    margin-right:5.0rem !important;
+}
+.smallest-customer-text-box {
+    width: clamp(10rem, 10vw, 15.875rem);
+}
+   @media screen and (max-width: 320px) {
+        .push-left {
+            margin-right: 0 !important;
+        }
+        .push-right {
+            margin-left: 6rem !important;
+        }
+        .banner-section {
+            background-size: cover;
+            height: clamp(18.313rem, 333vh, 33rem);
+        }  
+        .push-l {
+            margin-left: 11rem !important;
+        }  
+        .small-screen-form {
+            display:block !important;
+        }
+        .push-r {
+            margin-left: 0 !important;
+        }
+        .call-card-box {
+            padding-right: 38rem !important;
+        }
+        .booking-section {
+            width: 0 !important;
+        }
+    }
+
+   @media screen and (max-width: 768px) {
+        .booking-section .card {
+            width: 38rem !important;
+        }
+        .push-r {
+            margin-left: 5.0rem !important;
+        }
+        .push-left {
+            margin-right:14.0rem !important;
+        }
+   }
+       
+   
